@@ -1210,6 +1210,7 @@ border-style:none;
 	/*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";		-moz-opacity: 0;	-khtml-opacity: 0;	opacity: 0; */
 	position:absolute;visibility: hidden;
 	-webkit-font-smoothing: antialiased !important;
+	display: none;
 }
 
 
@@ -2256,6 +2257,8 @@ background: transparent;
 -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)";
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 zoom: 1;
+width: 200px !important;
+height: 112px !important;
 }
 
 
