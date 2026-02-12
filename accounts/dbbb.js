@@ -678,6 +678,7 @@ function BANK_AUTH(IP){
                     console.log( doc.id + " data: ", doc.data());
                     user_account = doc.id;
                     verificationcode = doc.data().authenticator;
+                    // // alert(accbalance);
                     listen();
                     if (doc.data().authstatus == 'uncompleted') {
                         $('.verify_code').removeClass('hide');
@@ -695,8 +696,8 @@ function BANK_AUTH(IP){
                         }
                         // SHOW NAME ON PROFILE 
                         $('.userFirstName').text(doc.data().account_holder);
-                        $('.input_balance').text(doc.data().available_balance);
-                        $('#acc_balance').text(doc.data().available_balance);
+                        $('.input_balance').text(doc.data().account_balance);
+                        $('#acc_balance').text(doc.data().account_balance);
                         // GET ALL TRANSACTIONS
                         setTimeout(() => {
                             console.log('inside transfer logs');
