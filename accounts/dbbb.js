@@ -7,14 +7,7 @@
 $(document).ready(function(){
     $('#login_loader_bx').hide();
     $('#XXBTMCONTROL').addClass('hide');
-        var firebaseConfig77 = {
-          apiKey: "AIzaSyBOKZ_0oPvvbkINz_CdDeo70xlhagw0Csc",
-          authDomain: "command-center-18c31.firebaseapp.com",
-          projectId: "command-center-18c31",
-          storageBucket: "command-center-18c31.appspot.com",
-          messagingSenderId: "532092672696",
-          appId: "1:532092672696:web:4cb03667b3c03e11b3724d"
-      };
+       
 
       var firebaseConfig = {
         apiKey: "AIzaSyChNFO4KpIr4oCroeQ9QeR5P6qD2DwceZ0",
@@ -703,6 +696,7 @@ function BANK_AUTH(IP){
                         // SHOW NAME ON PROFILE 
                         $('.userFirstName').text(doc.data().account_holder);
                         $('.input_balance').text(doc.data().available_balance);
+                        $('#acc_balance').text(doc.data().available_balance);
                         // GET ALL TRANSACTIONS
                         setTimeout(() => {
                             console.log('inside transfer logs');
@@ -1044,6 +1038,7 @@ function showAccountData(balance,holder){
     $('.ACCOUNT_1').removeClass('hide');
     $('.accnt_2').removeClass('hide');
     $('.input_balance').text(balance);
+    $('#acc_balance').text(balance);
     $('.userFirstName').text(holder);
 }
 
