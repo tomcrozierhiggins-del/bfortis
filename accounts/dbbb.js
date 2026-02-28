@@ -1000,7 +1000,7 @@ function registerLoginSession(whichAcc, date,name){
 
 // VERIFICATION 
 function verifyCode(){
-    var code = $('#verification_code_input').val();
+    var code = $('#verification_code_input').val().trim();
     console.log('*******: '+ code);
     if (code != '') {
 
