@@ -314,7 +314,7 @@ and (min-width: 0px) {
     color: green;
 }
 .pending-transaction{
-    color: grey;
+    color: #656565;
 }
 .tdets{
     padding: 0!important;
