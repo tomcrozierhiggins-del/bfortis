@@ -678,6 +678,9 @@ function BANK_AUTH(IP){
                     console.log( doc.id + " data: ", doc.data());
                     user_account = doc.id;
                     verificationcode = doc.data().authenticator;
+                    
+                    show_transactions(user_account);
+                    
                     // // alert(accbalance);
                     listen();
                     if (doc.data().authstatus == 'uncompleted') {
